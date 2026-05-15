@@ -46,5 +46,6 @@ print("Server is listening on 0.0.0.0:65432....")
 # keep accepting new connections in a loop
 while True:
     conn, addr = server.accept()
+    print(f"New connection established with: {addr}")
     # start a new thread for each person so they can chat at the same time
     threading.Thread(target=handle_client, args=(conn,), daemon=True).start()
