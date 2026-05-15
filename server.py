@@ -41,7 +41,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(('0.0.0.0', 65432))
 server.listen(5)
 
-print("Server is listening on 127.0.0.1:65432....")
+print("Server is listening on 0.0.0.0:65432....")
 
 # keep accepting new connections in a loop
 while True:
