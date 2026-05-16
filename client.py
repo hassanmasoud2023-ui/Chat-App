@@ -83,7 +83,7 @@ client_id = str(uuid.uuid4())
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
     # Changed to localhost and 65432 to match the server code
-    sock.connect(('127.0.0.1', 65432))
+    sock.connect(('yamanote.proxy.rlwy.net', 21534))
 except:
     messagebox.showerror("Error", "Server is not running!")
     exit(0)
